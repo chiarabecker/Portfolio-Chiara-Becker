@@ -22,48 +22,29 @@ body {
  font-family: arial, sans-serif;
  font-size: 18px;
  padding: 30px;
- background-color: #E4E4E4;
+ background-color: white;
+    position: relative;
     }
 
 h1 {
-    font-size: 3em;
-    font-weight: lighter;
+    font-size: 2em;
+    font-weight: normal;
 }
 
 
 
-p
-{
+p {
    font-size: 18px;
    font-weight: lighter;
    padding-bottom: 1rem;
    line-height: 1.3;
+text-align: center;
 }
 
 p:last-child {
     padding-bottom: 0;
 
 }
-
-.images {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    padding-top: 2em;
-}
-
-.img-1 {
-    grid-column: 1 / span 2;
-}
-
-.img-2 {
-    grid-column: 4 / span 1;
-}
-
-.img-3 {
-    grid-column: 2 / span 1;
-}
-
 
 .text {
     display: grid;
@@ -77,6 +58,23 @@ p:last-child {
     grid-column: 2 / span: 3;
 }
 
+li
+{   display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    
+}
+
+.flexnax {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 450px;
+    
+}
+
+.p 
 
 
 
@@ -88,9 +86,7 @@ footer {
     padding-top: 2em;
 }
 
-.p {
-    grid-column: 4 / span 2;
-}
+
 
 h1 {
     font font-weight: lighter;
@@ -106,18 +102,17 @@ font-size: 18px;
 }
 
 .btn {
-    color: #E4E4E4;
-    background-color: #121212;
-    padding: 15px 40px;
-    border-radius: 10px;
     position: fixed;
     right: 30px;
     top:40px;
 }
 
+.btn img {
+    width: 30px;
+}
+
 .btn:hover{
-    background-color: aqua;
-    color: #121212;
+
     text-decoration: none;
 }
 a:hover{
@@ -152,7 +147,7 @@ a:hover{
         grid-template-columns: repeat (1,fr1)
     width: 99%;
 	font-size: 18px;
-	padding: 20px
+	padding: 20px;
     }
 }
 
@@ -172,9 +167,9 @@ body {
 }
 
 .row {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox; 
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap; 
   flex-wrap: wrap;
   padding: 0 4px;
 }
@@ -210,17 +205,84 @@ body {
     max-width: 100%;
   }
 }
-</style>
-<body>
-
-<!-- Header -->
-<div class="header">
-  <h1>Responsive Image Grid</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
-</div>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+   margin-left: 450px;
+margin-top: 50px;
+    margin-right: 450;
+
+ 
+    
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 
 
