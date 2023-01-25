@@ -188,7 +188,7 @@ body {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsive layout -  */
 @media screen and (max-width: 800px) {
   .column {
     -ms-flex: 50%;
@@ -226,7 +226,7 @@ body {
   display: flex;
    margin-left: 450px;
 margin-top: 50px;
-    margin-right: 450;
+    margin-right: 0px;
 
  
     
@@ -269,20 +269,34 @@ margin-top: 50px;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+
 
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+img {
+        width: 100%;
+        height: auto;
+        border-image: 20px;
+     
+    
+}
+
+
+
+
+
+    
+
+    
+    
+    
+    
+
 
 
 
