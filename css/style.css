@@ -16,6 +16,10 @@ img{
     height: auto ;
 }
 
+.active a {
+    text-decoration: underline;
+}
+
 /*styles */
 
 body {
@@ -27,7 +31,7 @@ body {
     }
 
 h1 {
-    font-size: 2em;
+    font-size: 35px;
     font-weight: normal;
 }
 
@@ -70,7 +74,7 @@ li
     display: flex;
     position: absolute;
     top: 30px;
-    left: 450px;
+    left: 350px;
     
 }
 
@@ -207,8 +211,13 @@ body {
     .flexnax {
     display: block;
     position: static;
- 
+    letter-spacing: 2px;
+    
 }
+    
+    .flexnax li {
+        text-align: left
+    }
 }
 
 
