@@ -204,6 +204,11 @@ body {
     flex: 100%;
     max-width: 100%;
   }
+    .flexnax {
+    display: block;
+    position: static;
+ 
+}
 }
 
 
@@ -221,15 +226,16 @@ body {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  margin: auto;
-  display: flex;
-   margin-left: 450px;
-margin-top: 50px;
-    margin-right: 0px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    margin: auto;
+}
 
- 
-    
+.mySlides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Next & previous buttons */
