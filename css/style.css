@@ -17,13 +17,13 @@ img{
 }
 
 .active a {
-    text-decoration: underline;
+    font-style: italic;
 }
 
 /*styles */
 
 body {
- font-family: arial, sans-serif;
+ font-family: Gujarati Sangam MN, sans-serif;
  font-size: 18px;
  padding: 30px;
  background-color: white;
@@ -35,14 +35,25 @@ h1 {
     font-weight: normal;
 }
 
-
-
-p {
-   font-size: 18px;
+h2 {
+    font-family: Gujarati Sangam MN; 
+   font-size: 14px;
    font-weight: lighter;
    padding-bottom: 1rem;
    line-height: 1.3;
-text-align: center;
+   text-align: center;
+  margin-top: 2.5em;
+}
+
+
+p {
+   font-family: Gujarati Sangam MN; 
+   font-size: 10px;
+   font-weight: lighter;
+   padding-bottom: 1rem;
+   line-height: 1.3;
+   text-align: center;
+  margin-top: 1em;
 }
 
 p:last-child {
@@ -93,16 +104,17 @@ footer {
 
 
 h1 {
+    font-family: futura;
+    font-size: 30px;
     font font-weight: lighter;
-    letter-spacing: 2px;
-        
-    padding-bottom: 1rem;
+    letter-spacing: 2px;   
+    padding-bottom: 2rem;
 }
 
 a {
  text-decoration: none;
  color:black;
-font-size: 18px;
+font-size: 16px;
 }
 
 .btn {
@@ -212,7 +224,7 @@ body {
     display: block;
     position: static;
     letter-spacing: 2px;
-    
+    margin-bottom: 20px;
 }
     
     .flexnax li {
@@ -220,6 +232,10 @@ body {
     }
 }
 
+.h1 {
+    font-size: 10px;
+
+}
 
 
 
@@ -228,8 +244,34 @@ body {
 
 
 
+/*  layout    */
 
 
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 3px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+    
+    
+    
 
 
 
@@ -273,18 +315,6 @@ body {
   
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-
 
 
 /* On smaller screens, decrease text size */
@@ -302,18 +332,35 @@ img {
 }
 
 
-
-
-
     
+/* Responsive layout -  */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
 
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
     
-    
-    
-    
+    h2 {
+        margin-top: 10px;
+    }
 
+ 
 
-
+   h1 
+    {
+        font-size: 20px;
+        margin-bottom: 1px;
+    }
 
 
 
