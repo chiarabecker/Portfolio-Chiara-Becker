@@ -73,7 +73,7 @@ li
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
     padding-bottom: 8px;
-    font-family: Gujarati Sangam MN;
+    font-family: Gujarati Sangam MN, sans-serif;
 }
 
 .flexnax {
@@ -370,8 +370,7 @@ img {
   position: absolute;
   width: 100%;
 text-align:center;
-    padding-left: 110px;
-    
+    padding-left: 125px;
  font-family: Gujarati Sangam MN, sans-serif;
    
   
