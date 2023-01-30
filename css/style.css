@@ -3,6 +3,7 @@ body, section, p, h1, h2, a, figure, header, footer {
     margin: 0;   
     font-style: normal;
     font-weight: normal;
+    
 }
 
 figure {
@@ -24,30 +25,26 @@ img{
 
 body {
  font-family: Gujarati Sangam MN, sans-serif;
- font-size: 18px;
+ font-size: 10px;
  padding: 30px;
  background-color: white;
     position: relative;
     }
 
-h1 {
-    font-size: 35px;
-    font-weight: normal;
-}
-
 h2 {
     font-family: Gujarati Sangam MN; 
-   font-size: 14px;
+   font-size: 13.5px;
    font-weight: lighter;
    padding-bottom: 1rem;
    line-height: 1.3;
    text-align: center;
-  margin-top: 2.5em;
+  margin-top: 4.5em;
+ grid-column: 2 / span: 3;
 }
 
 
 p {
-   font-family: Gujarati Sangam MN; 
+   font-family: Gujarati Sangam MN, sans-serif; 
    font-size: 10px;
    font-weight: lighter;
    padding-bottom: 1rem;
@@ -69,27 +66,23 @@ p:last-child {
     padding-top: 2em;
 }
 
-.h2 {
-    grid-column: 2 / span: 3;
-}
 
 li
 {   display: grid;
     text-align: center;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
-    
+    padding-bottom: 8px;
+    font-family: Gujarati Sangam MN;
 }
 
 .flexnax {
     display: flex;
     position: absolute;
     top: 30px;
-    left: 350px;
+    left: 400px;  
     
 }
-
-.p 
 
 
 
@@ -105,16 +98,16 @@ footer {
 
 h1 {
     font-family: futura;
-    font-size: 30px;
-    font font-weight: lighter;
+    font-size: 25px;
     letter-spacing: 2px;   
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 a {
  text-decoration: none;
  color:black;
-font-size: 16px;
+font-size: 13.5px;
+    
 }
 
 .btn {
@@ -124,7 +117,7 @@ font-size: 16px;
 }
 
 .btn img {
-    width: 30px;
+    width: 20px;
 }
 
 .btn:hover{
@@ -190,7 +183,7 @@ body {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Gittter 3 Spalten work */
 .column {
   -ms-flex: 33%; /* IE10 */
   flex: 33%;
@@ -204,7 +197,7 @@ body {
   width: 100%;
 }
 
-/* Responsive layout -  */
+
 @media screen and (max-width: 800px) {
   .column {
     -ms-flex: 50%;
@@ -213,7 +206,7 @@ body {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column {
     -ms-flex: 100%;
@@ -228,7 +221,8 @@ body {
 }
     
     .flexnax li {
-        text-align: left
+        text-align: left;
+
     }
 }
 
@@ -241,12 +235,6 @@ body {
 
 
 
-
-
-
-/*  layout    */
-
-
 .row {
   display: -ms-flexbox; 
   display: flex;
@@ -255,7 +243,7 @@ body {
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* /* Gittter 3 Spalten archive */ 
 .column {
   -ms-flex: 33%; /* IE10 */
   flex: 33%;
@@ -278,9 +266,10 @@ body {
 /* Slideshow container */
 .slideshow-container {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     position: relative;
     margin: auto;
+    margin-top: 20px;
 }
 
 .mySlides {
@@ -288,6 +277,33 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* Caption text */
+.text {
+  color: grey;
+  font-size: 11px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+text-align:center;
+    padding-left: 200px;
+ font-family: Gujarati Sangam MN, sans-serif;
+   
+  
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.8s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 2}
+}
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -310,14 +326,14 @@ body {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   
 }
 
 
 
-/* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
@@ -333,7 +349,7 @@ img {
 
 
     
-/* Responsive layout -  */
+
 @media screen and (max-width: 800px) {
   .column {
     -ms-flex: 50%;
@@ -342,7 +358,7 @@ img {
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column {
     -ms-flex: 100%;
@@ -354,7 +370,7 @@ img {
         margin-top: 10px;
     }
 
- 
+
 
    h1 
     {
